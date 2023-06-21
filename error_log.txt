@@ -1,0 +1,185 @@
+ERROR: FileNotFoundError occurred at 2023-06-18 23:10:02.
+Message: [Errno 2] No such file or directory: 'database/nlp_database.json'
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 32, in main
+    with open('database/nlp_database.json') as db:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: FileNotFoundError occurred at 2023-06-18 23:10:29.
+Message: [Errno 2] No such file or directory: 'database/nlp_database.json'
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 32, in main
+    with open('database/nlp_database.json') as db:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: FileNotFoundError occurred at 2023-06-18 23:11:57.
+Message: [Errno 2] No such file or directory: 'database/nlp_database.json'
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 32, in main
+    with open('database/nlp_database.json') as db:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: JSONDecodeError occurred at 2023-06-18 23:12:14.
+Message: Expecting value: line 14 column 17 (char 439)
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 33, in main
+    database = json.load(db)
+               ^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+
+
+ERROR: OSError occurred at 2023-06-18 23:12:43.
+Message: [Errno 63] File name too long: "database/nlp_documents/[{'agent_id': 'agent1', 'document_contexts': [{'document_id': 'doc1', 'context': 'Sample context for document 1 managed by agent 1.'}, {'document_id': 'doc2', 'context': 'Sample context for document 2 managed by agent 1.'}]}, {'agent_id': 'agent2', 'document_contexts': [{'document_id': 'doc3', 'context': 'Sample context for document 3 managed by agent 2.'}, {'document_id': 'doc4', 'context': 'Sample context for document 4 managed by agent 2.'}]}]"
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 36, in main
+    nlp_database_manager = NlpDatabaseManager(database)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 31, in __init__
+    self.document_agents = self.load_document_agents()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 42, in load_document_agents
+    with open(f"database/nlp_documents/{context_file}") as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: OSError occurred at 2023-06-18 23:13:45.
+Message: [Errno 63] File name too long: "database/nlp_documents/[{'agent_id': 'agent1', 'document_contexts': [{'document_id': 'doc1', 'context': 'Sample context for document 1 managed by agent 1.'}, {'document_id': 'doc2', 'context': 'Sample context for document 2 managed by agent 1.'}]}, {'agent_id': 'agent2', 'document_contexts': [{'document_id': 'doc3', 'context': 'Sample context for document 3 managed by agent 2.'}, {'document_id': 'doc4', 'context': 'Sample context for document 4 managed by agent 2.'}]}]"
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 36, in main
+    nlp_database_manager = NlpDatabaseManager(database)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 31, in __init__
+    self.document_agents = self.load_document_agents()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 42, in load_document_agents
+    with open(f"database/nlp_documents/{context_file}") as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: OSError occurred at 2023-06-18 23:14:21.
+Message: [Errno 63] File name too long: "database/nlp_documents/[{'agent_id': 'agent1', 'document_contexts': [{'document_id': 'doc1', 'context': 'Sample context for document 1 managed by agent 1.'}, {'document_id': 'doc2', 'context': 'Sample context for document 2 managed by agent 1.'}]}, {'agent_id': 'agent2', 'document_contexts': [{'document_id': 'doc3', 'context': 'Sample context for document 3 managed by agent 2.'}, {'document_id': 'doc4', 'context': 'Sample context for document 4 managed by agent 2.'}]}]"
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 36, in main
+    nlp_database_manager = NlpDatabaseManager(database)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 31, in __init__
+    self.document_agents = self.load_document_agents()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 43, in load_document_agents
+    with open(f"database/nlp_documents/{context_file}") as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: AttributeError occurred at 2023-06-18 23:15:37.
+Message: 'list' object has no attribute 'items'
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 36, in main
+    nlp_database_manager = NlpDatabaseManager(database)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 31, in __init__
+    self.document_agents = self.load_document_agents()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 41, in load_document_agents
+    for agent_id, context_file in self.database["agents"].items():
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: AttributeError occurred at 2023-06-18 23:15:56.
+Message: 'list' object has no attribute 'items'
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 36, in main
+    nlp_database_manager = NlpDatabaseManager(database)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 31, in __init__
+    self.document_agents = self.load_document_agents()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 41, in load_document_agents
+    for agent_id, context_file in self.database["agents"].items():
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: NameError occurred at 2023-06-18 23:16:10.
+Message: name 'context_file' is not defined
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 36, in main
+    nlp_database_manager = NlpDatabaseManager(database)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 31, in __init__
+    self.document_agents = self.load_document_agents()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 43, in load_document_agents
+    with open(f"database/nlp_documents/{context_file}") as file:
+                                        ^^^^^^^^^^^^
+
+
+ERROR: FileNotFoundError occurred at 2023-06-18 23:16:50.
+Message: [Errno 2] No such file or directory: 'database/nlp_documents/agent1'
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 36, in main
+    nlp_database_manager = NlpDatabaseManager(database)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 31, in __init__
+    self.document_agents = self.load_document_agents()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 44, in load_document_agents
+    with open(f"database/nlp_documents/{context_file}") as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: FileNotFoundError occurred at 2023-06-18 23:17:11.
+Message: [Errno 2] No such file or directory: "database/nlp_documents/[{'document_id': 'doc1', 'context': 'Sample context for document 1 managed by agent 1.'}, {'document_id': 'doc2', 'context': 'Sample context for document 2 managed by agent 1.'}]_documents.json"
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 36, in main
+    nlp_database_manager = NlpDatabaseManager(database)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 31, in __init__
+    self.document_agents = self.load_document_agents()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 44, in load_document_agents
+    with open(f"database/nlp_documents/{context_file}_documents.json") as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: FileNotFoundError occurred at 2023-06-18 23:17:21.
+Message: [Errno 2] No such file or directory: "database/nlp_documents/[{'document_id': 'doc1', 'context': 'Sample context for document 1 managed by agent 1.'}, {'document_id': 'doc2', 'context': 'Sample context for document 2 managed by agent 1.'}]_documents.json"
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/main.py", line 36, in main
+    nlp_database_manager = NlpDatabaseManager(database)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 31, in __init__
+    self.document_agents = self.load_document_agents()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_database_manager.py", line 44, in load_document_agents
+    with open(f"database/nlp_documents/{context_file}_documents.json") as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: AttributeError occurred at 2023-06-18 23:21:22.
+Message: 'NlpDatabaseManager' object has no attribute 'run_query'
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_agent_manager.py", line 45, in run_query
+    response = self.db_manager.run_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+ERROR: AttributeError occurred at 2023-06-19 10:01:11.
+Message: 'NlpDatabaseManager' object has no attribute 'run_query'
+Traceback:
+  File "/Users/mehdinabhani/Dev-Con/MAD-PROJECTS/mad_super_gpt/mad_db_gpt/DB_One/agents/nlp_agent_manager.py", line 45, in run_query
+    response = self.db_manager.run_query(query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

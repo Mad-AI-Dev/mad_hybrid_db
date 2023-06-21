@@ -1,0 +1,30 @@
+{
+    "agents": [
+        {
+            "agent_id": "agent1",
+            "document_contexts": [
+                {
+                    "document_id": "doc1",
+                    "context": "Sample context for document 1 managed by agent 1."
+                },
+                {
+                    "document_id": "doc2",
+                    "context": "Sample context for document 2 managed by agent 1."
+                }
+            ]
+        },
+        {
+            "agent_id": "agent2",
+            "document_contexts": [
+                {
+                    "document_id": "doc3",
+                    "context": "Sample context for document 3 managed by agent 2."
+                },
+                {
+                    "document_id": "doc4",
+                    "context": "Sample context for document 4 managed by agent 2."
+                }
+            ]
+        }
+    ]
+}

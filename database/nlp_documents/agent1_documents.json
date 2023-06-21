@@ -1,0 +1,13 @@
+{
+    "agent_id": "agent1",
+    "document_contexts": [
+        {
+            "document_id": "doc1",
+            "context": "Sample context for document 1 managed by agent 1."
+        },
+        {
+            "document_id": "doc2",
+            "context": "Sample context for document 2 managed by agent 1."
+        }
+    ]
+}
